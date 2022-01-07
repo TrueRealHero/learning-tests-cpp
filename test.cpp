@@ -1,14 +1,21 @@
 #include <iostream>
 #include <string>
 #include <stdio.h>
+#include <vector>
 
-int main()
-{
-  std::string name;
-  std::cout << "What is your name? ";
-  getline (std::cin, name);
-  std::cout << "Hello, " << name << "!\n";
-  getchar();
+using namespace std;
+
+int main () {
+
+  int num1, num2, result;
+
+  cout << "Enter num1:" << endl;
+  cin >> num1;
+  cout << "Enter num2:" << endl;
+  cin >> num2;
+
+  result = num1 + num2;
+  cout << result << endl;
 
   return 0;
 }
